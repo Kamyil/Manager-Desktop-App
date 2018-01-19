@@ -50,8 +50,8 @@ function createAddWindow(){
 //Create new window
 add_window = new BrowserWindow({
 
-    width: 200,
-    height: 300,
+    width: 500,
+    height: 500,
     title: 'Add item'
 
 

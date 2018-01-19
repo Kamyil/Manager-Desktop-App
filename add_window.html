@@ -1,14 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700,900" rel="stylesheet">
 
-    <title>Add item</title>
+    <title>Add task</title>
+    <style>
+    
+    body{
+        font-family: 'Roboto', sans-serif;
+        background-image: url('img/doodles.png');
+    background-position: center;
+    background-attachment: fixed;
+    }
+    form{
+
+
+    }
+    input{
+        border: none;
+        outline: none;
+        display: block;
+        border-bottom: 2px solid cornflowerblue;
+        margin-top: 2vh;
+        font-size: 8vh;
+    }
+    input:hover{
+       border-bottom: 5px solid cornflowerblue;
+        transition-duration: 0.1s;
+
+    }
+    label{
+        font-weight: 900;
+        text-align: center;
+       font-size: 8vh;
+    }
+    button{
+        border: none;
+        outline: none;
+        background-color: cornflowerblue;
+        color: white;
+        font-weight: 700;
+        padding: 5vh;
+        border-radius: 5px;
+        display: block;
+        position: fixed;
+  bottom: 30px;
+  right: 30px;
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    }
+    button:hover{
+        cursor: pointer;
+transform: scale(1.2);
+transition-duration: 0.5s;
+
+    }
+    
+    
+    </style>
 </head>
 <body>
     <form>
 <div>
-    <label>Enter Item</label>
-    <input type="text" id="item" autofocus>
+    <label>Enter Task</label>
+    <input type="text" id="item" placeholder="here..." autofocus>
 </div>
 <button type="submit">Add</button>
 
